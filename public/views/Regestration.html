@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration_Page</title>
+    <link rel="stylesheet" href="/Assets/Regestration.css"/>
+</head> -->
+<body ng-app="">
+    <div id="container2" >
+        <h1 class="margin">Sign Up</h1>
+        <hr>
+        <label class="margin" for="name"><b>Full Name</b></label>
+        <input type="text" placeholder="Enter Full Name" ng-model="user.full_name"  name="name" required>
+        <br>
+        <label class="margin" for="mobile_no"><b>Contact Number</b></label>
+        <input type="tel" placeholder="Enter Contact Number" ng-model="user.mobile_no" name="mobile_no" required>
+        <br>
+        <label class="margin" for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" ng-model="user.email"  required>
+        <br>
+        <label class="margin" for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" ng-model="user.password" name="psw" required>  
+        <br>
+        <label class="margin" for="psw1"><b>Confirm password</b></label>
+        <input type="password" placeholder="Confirm Password" name="psw1" required>
+        <br>
+        <label>
+                <input class="margin" type="checkbox" checked="checked" id="rem" name="remember" style="margin-bottom:15px"> Remember me
+                <a href="index.html#/Login" id="l" >Sign in</a> 
+            </label>
+        
+        <p class="margin">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        <button id="s" type="submit" ng-click="register()">Register</button>
+        <button id="r" type="reset">Clear</button>       
+</div>
+</body>
+</html>

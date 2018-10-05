@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="/public/Assets/Login.css"/>
+</head> -->
+<body ng-app="">
+        
+        <div class="container" id="container">
+            <form action="">
+                <h2 id="header1">Login</h2>
+                <!-- <p id="paragraph">Please enter the details to login.</p> -->
+                <hr>
+                <label for="email" class="labels"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" ng-model="user.email" class="input" id="user" required>
+                <br>
+                <label for="psw"  class="labels" ><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" ng-model="user.password" class="input" id="psw" required>  
+                <br>
+                <label>
+                        <input type="checkbox" id="remember" class=" " checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                      </label>
+                <br>
+                <button type="submit" ng-click="login()" id="button">Login</button>
+                <br>   
+                <button type="reset" id="button1">Cancel</button>   
+                <a id="link" href=#>Forgot Password</a>
+             </form>
+        </div>
+    
+</body>
+</html>

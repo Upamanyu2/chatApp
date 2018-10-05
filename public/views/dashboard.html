@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Assets/dashboard.css"/>
+    <title>Document</title>
+</head> -->
+<body ng-app="" id="container1">
+  
+            <div class="contacts">
+                <div id="profile">
+                        <span id="spanheading">Users</span>
+                        <button id="signoutbutton" type="submit" ng-click="logout()"><i class="fa fa-power-off"></i></button>
+                <div>
+                   
+                </div>
+
+                </div> 
+                <div id="body1">
+                   <div class="contact_card" class="contact_car" id1={{x}} ng-repeat="x in list" ng-click="chatRoom(x)">
+                        <a >{{x.name}}</a>
+                   </div>
+
+                </div>     
+            </div>
+            <div class="chatboard" ng-hide="group_display">
+                    <div id="header">
+                    </div>
+                 
+                    <div id="body2">
+                      <!-- <img id="img" src="../Assets/images/Union 4.svg"> -->
+                        <div ng-repeat="chat in chatList">
+                            <div id="left_messagebox"  ng-if="chat.Name==curruser"> 
+                                <div id="message_content"><span ><b>{{chat.Name}}</b>: {{chat.Message}}</span></div>
+                                <br>
+                                <span id="date">{{chat.Time | date:'medium'}}</span>
+                                <!-- <p></p> -->
+                            </div>
+                            
+                            <div id="right_messagebox"  ng-if="chat.Name!=curruser"> 
+                              <div id="message_content"><span ><b>{{chat.Name}}</b>: {{chat.Message}}</span></div>
+                              <br>
+                              <span id="date">{{chat.Time | date:'medium'}}</span>
+                              <!-- <p></p> -->
+                            </div>
+                         </div>
+                         
+                    </div>    
+                    <div id="footer">
+                    <input id="textbox" type="text" name="textbox" ng-model="message" placeholder="Type your message here.."/>
+                    <button type="submit" id="clickable"><i class="fa fa-paper-plane" id="click" ng-click="add()"></i></button>
+                    </div>
+             </div>
+             <div class="chatboard" ng-hide="person_display">
+                <div id="header">
+                </div>
+             
+                <div id="body2">
+                  <!-- <img id="img" src="../Assets/images/Union 4.svg"> -->
+                    <div ng-repeat="chat in chat_array_person">
+                        <div id="left_messagebox"  ng-if="chat.Name==curruser"> 
+                            <div id="message_content"><span ><b>{{chat.Name}}</b>: {{chat.Message}}</span></div>
+                            <br>
+                            <span id="date">{{chat.Time | date:'medium'}}</span>
+                            <!-- <p></p> -->
+                        </div>
+                        
+                        <div id="right_messagebox"  ng-if="chat.Name!=curruser"> 
+                          <div id="message_content"><span ><b>{{chat.Name}}</b>: {{chat.Message}}</span></div>
+                          <br>
+                          <span id="date">{{chat.Time | date:'medium'}}</span>
+                          <!-- <p></p> -->
+                        </div>
+                     </div>
+                     
+                </div>    
+                <div id="footer">
+                <input id="textbox" type="text" name="textbox" ng-model="message1" placeholder="Type your message here.."/>
+                <button type="submit" id="clickable"><i class="fa fa-paper-plane" id="click" ng-click="peerToPeer()"></i></button>
+                </div>
+         </div>
+
+    
+</body>
+</html>
+         

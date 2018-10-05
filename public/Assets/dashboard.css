@@ -1,0 +1,145 @@
+#container1{
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    /* position: relative; */
+}
+.contacts{
+    width: 25%;
+    position: fixed;
+    float: left;
+    /* border: 1px solid black; */
+    height: 667px;
+}
+.chatboard{
+    width: 75%;
+    position: fixed;
+    position: relative;
+    float: right;
+    background-color: #fffcf2;
+    /* margin: 0 auto; */
+    /* border: 1px solid black; */
+    height: 660px;
+}
+#profile{
+    /* position: fixed; */
+    height: 14%;
+    width: 100%;
+    /* margin-top: 0%; */
+    background-color: #fec20b;
+}
+#body1{
+    /* height: 768px; */
+    margin-bottom: 0px;
+    height: 85%;
+    overflow-y: scroll;
+    
+}
+
+#header{
+    /* position: fixed; */
+    height: 11%;
+    width: 100%;
+    background-color: #fee615;
+
+}
+#body2{
+    height:75%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fffcf2;
+    /* overflow-y: scroll; */
+    overflow-y: scroll;
+    
+}
+.contact_card{
+    width: 94%;
+    height: 11%;
+    box-shadow: 5px 10px 18px rgb(117, 116, 114);
+    background: white;
+    border: 0px solid;
+    padding: 10px;
+    text-align: center;
+}
+.contact_car :hover{
+    background: white;
+    box-shadow: 5px 10px 18px papayawhip;
+}
+   
+
+#footer{
+    margin-bottom: 0px;
+    width: 72%;
+    height: 8%;
+    background-color: white;
+    opacity: .8;
+    position: fixed;
+}
+#textbox{
+    /* position: fixed; */
+    width: 93%;
+    height: 90%;
+}
+#img{
+    height: 20%;
+    width: 20%;
+    opacity: 0.1;
+    /* margin-top: 250px;
+    margin-left: 360px; */
+    margin: 0 auto;
+    position: fixed;
+    margin-top: 225px;
+    margin-left: 381px;
+}
+#signoutbutton{
+    
+    margin-top: 31px;
+    height: 40px;
+    width: 10%;
+    margin-left: 100px;
+   
+}
+#spanheading{
+    margin-left: 70px;
+    font-size: 30px
+}
+#left_messagebox{
+    border: 0apx solid rgb(102, 187, 102);
+    border-radius: 15px 15px 0px 15px;
+    background-color: #e1fcd9;
+    opacity: .8;
+    width: 29%;
+    margin: 10px 10px;
+    padding: 10px;
+    margin-left: 640px;
+    box-shadow: 0px 1px 3px 0px #707070;
+    /* box-shadow: 5px 10px 8px #d4d4d4; */
+    
+}
+#right_messagebox{
+    border: 0px solid #ffda6b;
+    border-radius: 0px 15px 15px 15px;
+    background-color: #fdf393;
+    opacity: .8;
+    width: 29%;
+    margin: 10px 10px;
+    padding: 10px;
+    box-shadow: 0px 1px 3px 0px #707070;
+
+    
+}
+#date{
+    font-size: 12px;
+    margin-left: 141px;
+}
+#message_content{
+    margin: 5px;
+    margin-top:2px;
+    word-wrap: break-word;
+}
+#click{
+    font-size:36px;
+}
+#clickable{
+    margin-top: 5px;
+}
